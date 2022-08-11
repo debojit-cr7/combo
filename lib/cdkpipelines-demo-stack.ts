@@ -30,7 +30,7 @@ export class CdkpipelinesDemoStack extends Stack {
       cpu: 512,
       desiredCount: 2,
       taskImageOptions:{
-        image: ecs.ContainerImage.fromRegistry('amazon/amazon-ecs-sample')
+        image: ecs.ContainerImage.fromRegistry('wordpress:php8.1-fpm-alpine')
       },
       memoryLimitMiB: 2048,
       publicLoadBalancer: true
